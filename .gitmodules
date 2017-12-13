@@ -1,0 +1,3 @@
+[submodule "MLKit/IQKeyboardManager"]
+	path = MLKit/IQKeyboardManager
+	url = https://github.com/hackiftekhar/IQKeyboardManager.git
