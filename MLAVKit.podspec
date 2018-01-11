@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "MLKit"
+  s.name         = "MLAVKit"
   s.version      = "1.0.0"
   s.summary      = "Collection for usage tools to make development Swift faster"
 
