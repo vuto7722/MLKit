@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @import RxSwift;
 @import RxCocoa;
-
+@import IQKeyboardManagerSwift;
 //! Project version number for MLKit.
 FOUNDATION_EXPORT double MLKitVersionNumber;
 

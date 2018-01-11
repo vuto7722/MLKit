@@ -1,9 +1,0 @@
-[submodule "MLKit/IQKeyboardManager"]
-	path = MLKit/IQKeyboardManager
-	url = https://github.com/hackiftekhar/IQKeyboardManager.git
-[submodule "MLKit/RxSwift"]
-	path = MLKit/RxSwift
-	url = https://github.com/ReactiveX/RxSwift.git
-[submodule "MLKit/LGButton"]
-	path = MLKit/LGButton
-	url = https://github.com/loregr/LGButton.git
