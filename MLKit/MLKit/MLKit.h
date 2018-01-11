@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@import RxSwift;
+@import RxCocoa;
+
 //! Project version number for MLKit.
 FOUNDATION_EXPORT double MLKitVersionNumber;
 
