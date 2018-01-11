@@ -1,3 +1,55 @@
-PODFILE CHECKSUM: baca6d035f8ecebce1125c75294d377098fa4cbb
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - CocoaLumberjack (3.2.1):
+    - CocoaLumberjack/Default (= 3.2.1)
+    - CocoaLumberjack/Extensions (= 3.2.1)
+  - CocoaLumberjack/Default (3.2.1)
+  - CocoaLumberjack/Extensions (3.2.1):
+    - CocoaLumberjack/Default
+  - DHSmartScreenshot (1.3.1)
+  - MLKit (0.5.5):
+    - AFNetworking (~> 3.1.0)
+    - CocoaLumberjack (~> 3.2.0)
+    - DHSmartScreenshot (~> 1.3.1)
+    - MLLayout (~> 0.4.3)
+    - MLPersonalModel (~> 11.2.1)
+    - MLRefreshControl (~> 1.1.0)
+    - SAMKeychain (~> 1.5.2)
+    - YYCache (~> 1.0.4)
+  - MLLayout (0.4.3)
+  - MLPersonalModel (11.2.1)
+  - MLRefreshControl (1.1.0)
+  - SAMKeychain (1.5.3)
+  - YYCache (1.0.4)
+
+DEPENDENCIES:
+  - MLKit
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CocoaLumberjack: 2800c03334042fe80589423c8d80e582dcaec482
+  DHSmartScreenshot: ee749048bd7126c4826748f98df3a4adc6ad6c78
+  MLKit: f187416359fc0a8b0b3a949b70d19f0ebdf4fcdf
+  MLLayout: 6ac7b51c7cadfeab852524035710a68a1368a19c
+  MLPersonalModel: 1dba0b5f424a8f99069c4e18c8f7666e5124b32e
+  MLRefreshControl: 245417c9719c27ef1787cccedd0c20407740d333
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+
+PODFILE CHECKSUM: 6401b336ad5ffb061f6595a6a925792c267bfe62
 
 COCOAPODS: 1.3.1

@@ -6,7 +6,7 @@ target 'Examples' do
   use_frameworks!
 
   # Pods for Examples
-
+pod 'MLKit', :path => 'https://github.com/vuto7722/MLKit.git'
   target 'ExamplesTests' do
     inherit! :search_paths
     # Pods for testing

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MLKit"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "Collection for usage tools to make development Swift faster"
 
   # This description is used to generate tags and improve search results.
@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "MLKit", "MLKit/**/*.{h,m,swift}"
-  s.exclude_files = "MLKit/Exclude"
+  s.exclude_files = "MLKit/Examples", "MLKit/MLKitTests"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -115,9 +115,10 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
-
+s.framework = "UIKit"
+s.dependency 'IQKeyboardManagerSwift'
+s.dependency 'RxSwift',    '~> 4.0'
+s.dependency 'RxCocoa',    '~> 4.0'
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
