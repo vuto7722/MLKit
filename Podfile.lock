@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.6.0)
   - IQKeyboardManagerSwift (5.0.6)
   - LGButton (1.0.5)
   - RxCocoa (4.0.0):
@@ -6,17 +7,19 @@ PODS:
   - RxSwift (4.0.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.5)
   - IQKeyboardManagerSwift
   - LGButton
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
 
 SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   IQKeyboardManagerSwift: 02bfbb0dff71c66d0ab77d80d25dfce0c3717735
   LGButton: 707ce916eb80b73a6c4688df34bee11adbafb663
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
 
-PODFILE CHECKSUM: 0058aa38367e0f12b979a23a60dc5d192c4e001d
+PODFILE CHECKSUM: c66d38b4ea3b8b58d6a933ab05366b664d345b25
 
 COCOAPODS: 1.3.1

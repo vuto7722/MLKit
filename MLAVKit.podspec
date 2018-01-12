@@ -119,6 +119,7 @@ s.framework = "UIKit"
 s.dependency 'IQKeyboardManagerSwift'
 s.dependency 'RxSwift',    '~> 4.0'
 s.dependency 'RxCocoa',    '~> 4.0'
+s.dependency 'Alamofire', '~> 4.5'
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 

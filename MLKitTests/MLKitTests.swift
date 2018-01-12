@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import MLKit
 
 class MLKitTests: XCTestCase {
     
