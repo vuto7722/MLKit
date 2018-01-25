@@ -2,14 +2,14 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-extension ObservableType where E == Bool {
+public extension ObservableType where E == Bool {
     /// Boolean not operator
     public func not() -> Observable<Bool> {
         return self.map(!)
     }
 }
 
-extension ObservableType where E == String {
+public extension ObservableType where E == String {
     func filterEmptyString() -> Observable<E> {
         return flatMap({ (value) -> Observable<E> in
             if value.isEmpty {
@@ -27,28 +27,28 @@ extension ObservableType where E == String {
     }
 }
 
-extension SharedSequenceConvertibleType {
+public extension SharedSequenceConvertibleType {
     func mapToVoid() -> SharedSequence<SharingStrategy, Void> {
         return map { _ in }
     }
 }
 
-extension ObservableType {
+public extension ObservableType {
     
-    func catchErrorJustComplete() -> Observable<E> {
+     func catchErrorJustComplete() -> Observable<E> {
         return catchError { _ in
             return Observable.empty()
         }
     }
     
-    func asDriverOnErrorJustComplete() -> Driver<E> {
+     func asDriverOnErrorJustComplete() -> Driver<E> {
         return asDriver { error in
 //            assertionFailure("Error \(error)")
             return Driver.empty()
         }
     }
     
-    func mapToVoid() -> Observable<Void> {
+     func mapToVoid() -> Observable<Void> {
         return map { _ in }
     }
 }
