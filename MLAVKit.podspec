@@ -17,5 +17,7 @@ s.dependency 'RxSwift',    '~> 4.0'
 s.dependency 'RxCocoa',    '~> 4.0'
 s.dependency 'Alamofire', '~> 4.5'
 s.dependency 'LoadableViews', '~> 2.2.0'
-
+s.dependency 'RxAlamofire'
+s.dependency 'RxDataSources', '~> 3.0'
+s.dependency 'Kingfisher', '~> 4.0'
 end

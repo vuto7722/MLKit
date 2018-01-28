@@ -11,6 +11,7 @@
 @import RxCocoa;
 @import IQKeyboardManagerSwift;
 @import Alamofire;
+@import Kingfisher;
 
 //! Project version number for MLKit.
 FOUNDATION_EXPORT double MLKitVersionNumber;
