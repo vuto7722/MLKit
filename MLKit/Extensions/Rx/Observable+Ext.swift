@@ -27,6 +27,17 @@ public extension ObservableType where E == String {
     }
 }
 
+public extension ObservableType where E == String? {
+    
+    func unwrap() -> Observable<String> {
+        return map({ (value) -> String in
+            return value ?? ""
+        })
+    }
+}
+
+
+
 public extension SharedSequenceConvertibleType {
     func mapToVoid() -> SharedSequence<SharingStrategy, Void> {
         return map { _ in }

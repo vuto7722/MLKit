@@ -46,3 +46,18 @@ extension UIStoryboard {
     }
 }
 
+extension UICollectionView: Reusable {}
+extension UICollectionViewCell: Reusable {}
+public extension UICollectionView {
+    func registerNib<T>(ofType nibType: T.Type = T.self) where T: UICollectionViewCell {
+        self.register(UINib(nibName: nibType.reuseID, bundle: nil), forCellWithReuseIdentifier: nibType.reuseID)
+    }
+    
+    public func dequeueReusableCell<T>(ofType cellType: T.Type = T.self, at indexPath: IndexPath) -> T where T: UICollectionViewCell {
+        guard let cell = dequeueReusableCell(withReuseIdentifier: cellType.reuseID, for: indexPath) as? T else {
+            fatalError()
+        }
+        return cell
+    }
+}
+

@@ -9,6 +9,7 @@ target 'MLKit' do
     pod 'RxCocoa',    '~> 4.0'
     pod 'LGButton'
     pod 'Alamofire', '~> 4.5'
+    pod 'Kingfisher', '~> 4.0'
     
     # Pods for MLKit
     
