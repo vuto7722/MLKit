@@ -14,3 +14,11 @@ public extension Optional where Wrapped == String {
         return self.unwrapEmpty.isEmpty
     }
 }
+
+public extension String {
+    func toDate(dateFormat: String) -> Date? {
+        let formatter = DateFormatter()
+        formatter.dateFormat = dateFormat
+        return formatter.date(from: self)
+    }
+}

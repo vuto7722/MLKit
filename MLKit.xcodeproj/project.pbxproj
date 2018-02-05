@@ -12,6 +12,7 @@
 		360992AE1FE12E3A00C52FFA /* MLKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 360992A01FE12E3A00C52FFA /* MLKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		360993631FE1396A00C52FFA /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360993611FE1396900C52FFA /* Reusable.swift */; };
 		365E2CF81FE37D05006C1473 /* ObservableType+FlatMapNilWrapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365E2CF71FE37D05006C1473 /* ObservableType+FlatMapNilWrapping.swift */; };
+		3664144420272C02009199C6 /* DecodeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3664144320272C02009199C6 /* DecodeFactory.swift */; };
 		36D1C7961FE22D4C000A9C12 /* Observable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C7931FE22D4B000A9C12 /* Observable+Ext.swift */; };
 		36D1C7971FE22D4C000A9C12 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C7941FE22D4C000A9C12 /* ActivityIndicator.swift */; };
 		36D1C7981FE22D4C000A9C12 /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D1C7951FE22D4C000A9C12 /* ErrorTracker.swift */; };
@@ -45,6 +46,7 @@
 		360992AD1FE12E3A00C52FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		360993611FE1396900C52FFA /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		365E2CF71FE37D05006C1473 /* ObservableType+FlatMapNilWrapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+FlatMapNilWrapping.swift"; sourceTree = "<group>"; };
+		3664144320272C02009199C6 /* DecodeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodeFactory.swift; sourceTree = "<group>"; };
 		36D1C7931FE22D4B000A9C12 /* Observable+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Ext.swift"; sourceTree = "<group>"; };
 		36D1C7941FE22D4C000A9C12 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		36D1C7951FE22D4C000A9C12 /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		3609929F1FE12E3A00C52FFA /* MLKit */ = {
 			isa = PBXGroup;
 			children = (
+				3664144220272C02009199C6 /* Network */,
 				36D4463E200768750033BC4A /* MLAVKit.podspec */,
 				360993621FE1396900C52FFA /* Extensions */,
 				360993601FE1396900C52FFA /* Utilities */,
@@ -140,6 +143,14 @@
 				36D1C7921FE22D2D000A9C12 /* Rx */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3664144220272C02009199C6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3664144320272C02009199C6 /* DecodeFactory.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		36D1C7921FE22D2D000A9C12 /* Rx */ = {
@@ -391,19 +402,23 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MLKitTests/Pods-MLKitTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/LGButton/LGButton.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				365E2CF81FE37D05006C1473 /* ObservableType+FlatMapNilWrapping.swift in Sources */,
+				3664144420272C02009199C6 /* DecodeFactory.swift in Sources */,
 				360993631FE1396A00C52FFA /* Reusable.swift in Sources */,
 				36D1C79D1FE22E4D000A9C12 /* RxBus.swift in Sources */,
 				36D1C7971FE22D4C000A9C12 /* ActivityIndicator.swift in Sources */,
