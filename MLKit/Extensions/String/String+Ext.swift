@@ -19,6 +19,8 @@ public extension String {
     func toDate(dateFormat: String) -> Date? {
         let formatter = DateFormatter()
         formatter.dateFormat = dateFormat
+        formatter.calendar = Calendar.current
+        formatter.timeZone = TimeZone.current
         return formatter.date(from: self)
     }
 }
