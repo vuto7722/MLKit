@@ -33,4 +33,38 @@ public struct DecodeFactory {
             })
         }
     }
+    
+    public static func decodeToObservable<T: Codable>(type: T.Type = T.self, content: String?) -> Observable<T> {
+        return Observable.deferred { () -> Observable<T> in
+            return Observable.create({ (observer) -> Disposable in
+                let decoder = JSONDecoder()
+                let dict = convertToDictionary(text: content.unwrapEmpty)
+                if let dict = dict {
+                    do {
+                        let value = try decoder.decode(T.self, from: dict.asData())
+                        observer.onNext(value)
+                        observer.onCompleted()
+                    } catch let ex {
+                        print(ex)
+                        observer.onError(ex)
+                    }
+                } else {
+                    observer.onError(NSError(domain: "Data nil when decode", code: -1, userInfo: nil))
+                }
+                
+                return Disposables.create()
+            })
+        }
+    }
+}
+
+public func convertToDictionary(text: String) -> [String: Any]? {
+    if let data = text.data(using: .utf8) {
+        do {
+            return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    return nil
 }

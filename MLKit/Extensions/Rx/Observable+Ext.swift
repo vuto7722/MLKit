@@ -63,3 +63,27 @@ public extension ObservableType {
         return map { _ in }
     }
 }
+
+public extension Observable where Element: OptionalType {
+    /// Returns an Observable where the nil values from the original Observable are
+    /// skipped
+    func unwrappedOptional() -> Observable<Element.Wrapped> {
+        return self.filter { $0.asOptional != nil }.map { $0.asOptional! }
+    }
+}
+
+/// Represent an optional value
+///
+/// This is needed to restrict our Observable extension to Observable that generate
+/// .Next events with Optional payload
+public protocol OptionalType {
+    associatedtype Wrapped
+    var asOptional:  Wrapped? { get }
+}
+
+/// Implementation of the OptionalType protocol by the Optional type
+extension Optional: OptionalType {
+    public var asOptional: Wrapped? { return self }
+}
+
+
