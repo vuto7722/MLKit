@@ -13,6 +13,9 @@
 		360993631FE1396A00C52FFA /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360993611FE1396900C52FFA /* Reusable.swift */; };
 		365E2CF81FE37D05006C1473 /* ObservableType+FlatMapNilWrapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365E2CF71FE37D05006C1473 /* ObservableType+FlatMapNilWrapping.swift */; };
 		3664144420272C02009199C6 /* DecodeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3664144320272C02009199C6 /* DecodeFactory.swift */; };
+		367206E2204BE54600EDDD5E /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367206E0204BE54600EDDD5E /* Global.swift */; };
+		367206E3204BE54600EDDD5E /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367206E1204BE54600EDDD5E /* ImageHelper.swift */; };
+		367206E5204BE55100EDDD5E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367206E4204BE55100EDDD5E /* Utils.swift */; };
 		367D6073202FDDD300B39959 /* Codable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367D6072202FDDD300B39959 /* Codable+Ext.swift */; };
 		367D6076202FDDEF00B39959 /* Dictionary+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367D6075202FDDEF00B39959 /* Dictionary+Ext.swift */; };
 		367D607A202FDDF700B39959 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367D6078202FDDF700B39959 /* Double+Ext.swift */; };
@@ -59,6 +62,9 @@
 		360993611FE1396900C52FFA /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		365E2CF71FE37D05006C1473 /* ObservableType+FlatMapNilWrapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+FlatMapNilWrapping.swift"; sourceTree = "<group>"; };
 		3664144320272C02009199C6 /* DecodeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodeFactory.swift; sourceTree = "<group>"; };
+		367206E0204BE54600EDDD5E /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		367206E1204BE54600EDDD5E /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		367206E4204BE55100EDDD5E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		367D6072202FDDD300B39959 /* Codable+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Codable+Ext.swift"; sourceTree = "<group>"; };
 		367D6075202FDDEF00B39959 /* Dictionary+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ext.swift"; sourceTree = "<group>"; };
 		367D6078202FDDF700B39959 /* Double+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
@@ -153,7 +159,10 @@
 		360993601FE1396900C52FFA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				367206E0204BE54600EDDD5E /* Global.swift */,
+				367206E1204BE54600EDDD5E /* ImageHelper.swift */,
 				360993611FE1396900C52FFA /* Reusable.swift */,
+				367206E4204BE55100EDDD5E /* Utils.swift */,
 				3694417C20499A58009C4FAF /* RxMediaPicker.swift */,
 				3694417E20499A7E009C4FAF /* RxMediaPickerDelegate.swift */,
 			);
@@ -546,9 +555,11 @@
 				367D6076202FDDEF00B39959 /* Dictionary+Ext.swift in Sources */,
 				3664144420272C02009199C6 /* DecodeFactory.swift in Sources */,
 				360993631FE1396A00C52FFA /* Reusable.swift in Sources */,
+				367206E5204BE55100EDDD5E /* Utils.swift in Sources */,
 				367D6081202FDE0900B39959 /* UIFont+Ext.swift in Sources */,
 				36D1C79D1FE22E4D000A9C12 /* RxBus.swift in Sources */,
 				3694417D20499A58009C4FAF /* RxMediaPicker.swift in Sources */,
+				367206E2204BE54600EDDD5E /* Global.swift in Sources */,
 				367D607B202FDDF700B39959 /* Int+Ext.swift in Sources */,
 				36D1C7971FE22D4C000A9C12 /* ActivityIndicator.swift in Sources */,
 				367D607A202FDDF700B39959 /* Double+Ext.swift in Sources */,
@@ -556,6 +567,7 @@
 				367D608B202FE05200B39959 /* CustomThumbView.swift in Sources */,
 				367D608C202FE05200B39959 /* CustomSwitch.swift in Sources */,
 				36D1C7961FE22D4C000A9C12 /* Observable+Ext.swift in Sources */,
+				367206E3204BE54600EDDD5E /* ImageHelper.swift in Sources */,
 				36CDC58C2029F10900B4AF4A /* IntrinsicView.swift in Sources */,
 				36D1C7B11FE22F49000A9C12 /* DateExtension.swift in Sources */,
 				367D6084202FDE1100B39959 /* UILabel+Ext.swift in Sources */,
